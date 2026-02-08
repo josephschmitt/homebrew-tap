@@ -5,21 +5,21 @@
 class Pj < Formula
   desc "Fast project finder CLI that searches your filesystem for git repositories and project directories"
   homepage "https://github.com/josephschmitt/pj"
-  version "1.7.1"
+  version "1.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/josephschmitt/pj/releases/download/v1.7.1/pj_1.7.1_darwin_amd64.tar.gz"
-      sha256 "cce47faf124064da632f10d453aeb060d7fc0094d88a19b966a784366201a2fa"
+      url "https://github.com/josephschmitt/pj/releases/download/v1.9.0/pj_1.9.0_darwin_amd64.tar.gz"
+      sha256 "4de2bc26c6c1ccd50ce424dbb5753f877a7f00d775de6e0ccfe27aec222017a2"
 
       def install
         bin.install "pj"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/josephschmitt/pj/releases/download/v1.7.1/pj_1.7.1_darwin_arm64.tar.gz"
-      sha256 "2148fad83483ab7fdd5fb7e7c2628441d34eb982a539ddf4f2ebadaec106909b"
+      url "https://github.com/josephschmitt/pj/releases/download/v1.9.0/pj_1.9.0_darwin_arm64.tar.gz"
+      sha256 "57551e6ef7270fe51d56ade6c7de026d0036c4889a7537a04245bf2208aecd7c"
 
       def install
         bin.install "pj"
@@ -29,15 +29,15 @@ class Pj < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/josephschmitt/pj/releases/download/v1.7.1/pj_1.7.1_linux_amd64.tar.gz"
-      sha256 "4600bbbba0fb4b7dbf35a5f8a565a88ae7dd4b2e05489203a9f848927025b5e8"
+      url "https://github.com/josephschmitt/pj/releases/download/v1.9.0/pj_1.9.0_linux_amd64.tar.gz"
+      sha256 "f170b92a40680c46bcf4c1e78cc5ae3902996297df3cef48c95419c0ac550f8f"
       def install
         bin.install "pj"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/josephschmitt/pj/releases/download/v1.7.1/pj_1.7.1_linux_arm64.tar.gz"
-      sha256 "e129141852ce9350fdf5a621c57ef1d20529d1925290529bc703fc1c93c6cc24"
+      url "https://github.com/josephschmitt/pj/releases/download/v1.9.0/pj_1.9.0_linux_arm64.tar.gz"
+      sha256 "8ac37e9ea92e409335b0cc2392b5e299b55f53b6bf1615030628334c2598b020"
       def install
         bin.install "pj"
       end
