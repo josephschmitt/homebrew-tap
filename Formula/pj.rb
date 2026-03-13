@@ -5,23 +5,23 @@
 class Pj < Formula
   desc "Fast project finder CLI that searches your filesystem for git repositories and project directories"
   homepage "https://github.com/josephschmitt/pj"
-  version "1.13.0"
+  version "1.14.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/josephschmitt/pj/releases/download/v1.13.0/pj_1.13.0_darwin_amd64.tar.gz"
-      sha256 "1a8d84f871547ae310cf7e31f71b4cd3c70519fc2db751737ce7c946677b4f57"
+      url "https://github.com/josephschmitt/pj/releases/download/v1.14.0/pj_1.14.0_darwin_amd64.tar.gz"
+      sha256 "8273e916ee61adc4f144f1fe0dbcfd3207691e20f8bf2c4412b0b10d21677683"
 
-      def install
+      define_method(:install) do
         bin.install "pj"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/josephschmitt/pj/releases/download/v1.13.0/pj_1.13.0_darwin_arm64.tar.gz"
-      sha256 "f4281aae758cad9bce4b979581e9c9b16dd40ae2ba12acc7afedfd898433fcda"
+      url "https://github.com/josephschmitt/pj/releases/download/v1.14.0/pj_1.14.0_darwin_arm64.tar.gz"
+      sha256 "a0706efe1da97170cd69d91e06fba0596d96606ad28f675e3d630e4a7104ed66"
 
-      def install
+      define_method(:install) do
         bin.install "pj"
       end
     end
@@ -29,16 +29,16 @@ class Pj < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/josephschmitt/pj/releases/download/v1.13.0/pj_1.13.0_linux_amd64.tar.gz"
-      sha256 "c8a98801127cd9e58ae6b38baf308fed0df030fdf856bb1eaa3157a041a438b9"
-      def install
+      url "https://github.com/josephschmitt/pj/releases/download/v1.14.0/pj_1.14.0_linux_amd64.tar.gz"
+      sha256 "aab444c3d2299382dac1706ff4ee44a834c40dc98a1b795dd5730e8ceb4bdb5b"
+      define_method(:install) do
         bin.install "pj"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/josephschmitt/pj/releases/download/v1.13.0/pj_1.13.0_linux_arm64.tar.gz"
-      sha256 "932f0a3c078965d4f11d022c8b70ec291b4a89cc049ec09436ff4fdac64d14e7"
-      def install
+      url "https://github.com/josephschmitt/pj/releases/download/v1.14.0/pj_1.14.0_linux_arm64.tar.gz"
+      sha256 "47ac3bb0b262b39e8ac402f336ce4a92c43d7639ed668ec9074095c10a852de4"
+      define_method(:install) do
         bin.install "pj"
       end
     end
