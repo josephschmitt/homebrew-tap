@@ -5,21 +5,21 @@
 class Monocle < Formula
   desc "Terminal-based code review companion for AI coding agents"
   homepage "https://github.com/josephschmitt/monocle"
-  version "0.10.1"
+  version "0.11.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/josephschmitt/monocle/releases/download/v0.10.1/monocle_0.10.1_darwin_amd64.tar.gz"
-      sha256 "ad3c2d6b7ea4c58d5ee20c1f9d63ccc8366508d7722dbecaafbb132b425c2ab6"
+      url "https://github.com/josephschmitt/monocle/releases/download/v0.11.0/monocle_darwin_amd64.tar.gz"
+      sha256 "ca61a162a63ffc095bc5927b5addac894c146670ddac96450af07a6804860be3"
 
       define_method(:install) do
         bin.install "monocle"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/josephschmitt/monocle/releases/download/v0.10.1/monocle_0.10.1_darwin_arm64.tar.gz"
-      sha256 "d90951caddc3c1793f316b3fa5ff5cc8065eff7434f69aa7fb28d9ac887ba94d"
+      url "https://github.com/josephschmitt/monocle/releases/download/v0.11.0/monocle_darwin_arm64.tar.gz"
+      sha256 "43cc0746daead92f924bc343a7199f461b0411088de029e739b7b28bce5fe85c"
 
       define_method(:install) do
         bin.install "monocle"
@@ -29,15 +29,15 @@ class Monocle < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/josephschmitt/monocle/releases/download/v0.10.1/monocle_0.10.1_linux_amd64.tar.gz"
-      sha256 "028ab3aca16728a17d7bca7a527da4df4767fe682d83979969b267c878da9ccc"
+      url "https://github.com/josephschmitt/monocle/releases/download/v0.11.0/monocle_linux_amd64.tar.gz"
+      sha256 "97d53c601e440a4a88033d8cc8cbcac33aed5c63dc01581851720e04d86b6810"
       define_method(:install) do
         bin.install "monocle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/josephschmitt/monocle/releases/download/v0.10.1/monocle_0.10.1_linux_arm64.tar.gz"
-      sha256 "376fa6e8b8782f9baf3812e0653a5cad1cb399f3def7d9b6c175ccd4af24dfb4"
+      url "https://github.com/josephschmitt/monocle/releases/download/v0.11.0/monocle_linux_arm64.tar.gz"
+      sha256 "0ea38e8029bbd4ce11369444a2c4529bf7df282cfdea0ef0051886d3373504dc"
       define_method(:install) do
         bin.install "monocle"
       end
